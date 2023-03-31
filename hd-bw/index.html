@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Page</title>
+    <style>
+      /* Style for the main container */
+      .main {
+        position: relative;
+        width: 720px;
+        height: 512px;
+        margin:auto;
+      }
+
+      /* Style for the container that holds the images */
+      .image-container {
+        position: relative;
+        width: 512px;
+        height: 512px;
+        margin-left: 10px;
+        margin:auto;
+        outline: 2px solid black;
+      }
+
+      /* Style for each image */
+      .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* Style for the dropdown menus container */
+      .dropdown-container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+      }
+
+      /* Style for each dropdown menu */
+      .dropdown {
+        margin-bottom: 10px;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="main">
+    <div style="display: flex;">
+        <!-- Dropdown menus container -->
+        <div class="dropdown-container">
+          <div class="dropdown">
+            <label for="menu-glasses">Glasses:</label><br>
+            <select id="menu-glasses">
+              <option value="glasses/black-rgb.png">Black RGB</option>
+              <option value="glasses/blank.png">Blank</option>
+              <option value="glasses/default.png">Default</option>
+              <option value="glasses/full-black.png">Full Black</option>
+              <option value="glasses/multi.png">Multi Color</option>
+            </select><hr>
+          </div>
+          <div class="dropdown">
+            <label for="menu-head">Head:</label><br>
+            <select id="menu-head">
+              <option value="head/boot.png">Boot</option>
+              <option value="head/dictionary.png">Dictionary</option>
+              <option value="head/factory-dark.png">Factory Dark</option>
+              <option value="head/garlic.png">Garlic</option>
+              <option value="head/icepop.png">Icepop</option>
+              <option value="head/pufferfish.png">Pufferfish</option>
+              <option value="head/queen-crown.png">Queen Crown</option>
+              <option value="head/skeleton-hat.png">Skeleton Hat</option>
+              <option value="head/smile.png">Smile</option>
+              <option value="head/speech-bubble.png">Speech Bubble</option>
+              <option value="head/weed.png">Weed</option>
+            </select><hr>
+          </div>
+          <div class="dropdown">
+            <label for="menu-accessory">Accessory:</label><br>
+            <select id="menu-accessory">
+              <option value="option1">Option 1</option>
+            </select><hr>
+          </div>
+          <div class="dropdown">
+            <label for="menu-body">Body:</label><br>
+            <select id="menu-body">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select><hr>
+          </div>
+          <div class="dropdown">
+            <label for="menu-bg">Background:</label><br>
+            <select id="menu-bg">
+              <option value="bg/black.png">Black</option>
+              <option value="bg/gray.png">Gray</option>
+              <option value="bg/white.png">White</option>
+            </select><hr>
+          </div>
+        </div>
+    <div class="image-container">
+      <img id="img-glasses" src="glasses/default.png" style="z-index: 5;">
+      <img id="img-head" src="head/boot.png" style="z-index: 4;">
+      <img id="img-accessory" src="accessory/hoodie-strings-uneven.png" style="z-index: 3;">
+      <img id="img-body" src="body.png" style="z-index: 2;">
+      <img id="img-bg" src="bg/white.png" style="z-index: 1;">
+    </div>
+    </div>
+    <script>
+        const menu_glasses = document.getElementById('menu-glasses');
+        const img_glasses = document.getElementById('img-glasses');
+
+        menu_glasses.addEventListener('change', function() {
+        // Get the selected option value
+        const selectedOption = this.value;
+        // Update the image source
+        img_glasses.src = selectedOption;
+        });
+
+        const menu_head = document.getElementById('menu-head');
+        const img_head = document.getElementById('img-head');
+
+        menu_head.addEventListener('change', function() {
+        // Get the selected option value
+        const selectedOption = this.value;
+        // Update the image source
+        img_head.src = selectedOption;
+        });
+
+        const menu_bg = document.getElementById('menu-bg');
+        const img_bg = document.getElementById('img-bg');
+
+        menu_bg.addEventListener('change', function() {
+        // Get the selected option value
+        const selectedOption = this.value;
+        // Update the image source
+        img_bg.src = selectedOption;
+        });
+    </script>
+  </body>
+</html>
