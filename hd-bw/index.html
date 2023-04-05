@@ -146,6 +146,16 @@
         img_head.src = selectedOption;
         });
 
+        const menu_accessory = document.getElementById('menu-accessory');
+        const img_accessory = document.getElementById('img-accessory');
+
+        menu_bg.addEventListener('change', function() {
+        // Get the selected option value
+        const selectedOption = this.value;
+        // Update the image source
+        img_accessory.src = selectedOption;
+        });
+
         const menu_bg = document.getElementById('menu-bg');
         const img_bg = document.getElementById('img-bg');
 
