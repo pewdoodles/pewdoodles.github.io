@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Example Page</title>
+    <title>HD Nouns Playground (Black/White)</title>
+    <meta name="description" content="An off-chain artwork generator featuring Nouns traits redrawn in 1080p HD">
+    <meta name="author" content="Skipper Lee">
     <style>
       /* Style for the main container */
       .main {
@@ -43,9 +45,9 @@
         margin-bottom: 10px;
       }
     </style>
-    <script src="script.js"></script>
   </head>
   <body>
+    <div style="text-align: center;"><h1>HD Nouns Playground (Black/White)</h1></div>
     <div class="main">
     <div style="display: flex;">
         <!-- Dropdown menus container -->
@@ -53,6 +55,7 @@
           <div class="dropdown">
             <label for="menu-glasses">Glasses:</label><br>
             <select id="menu-glasses">
+              <option value="glasses/.png"></option>
               <option value="glasses/black-rgb.png">Black RGB</option>
               <option value="glasses/blank.png">Blank</option>
               <option value="glasses/default.png">Default</option>
@@ -63,6 +66,7 @@
           <div class="dropdown">
             <label for="menu-head">Head:</label><br>
             <select id="menu-head">
+              <option value="head/.png"></option>
               <option value="head/beer.png">Beer</option>
               <option value="head/boot.png">Boot</option>
               <option value="head/bubble-speech.png">Bubble Speech</option>
@@ -72,40 +76,47 @@
               <option value="head/crown.png">Crown</option>
               <option value="head/dictionary.png">Dictionary</option>
               <option value="head/factory-dark.png">Factory Dark</option>
-              <option value="head/firehydrant.png">Firehydrant</option>
+              <option value="head/firehydrant.png">Fire Hydrant</option>
               <option value="head/fox.png">Fox</option>
               <option value="head/garlic.png">Garlic</option>
               <option value="head/icepop.png">Icepop</option>
               <option value="head/jellyfish.png">Jellyfish</option>
+              <option value="head/jupiter.png">Jupiter</option>
+              <option value="head/laptop.png">Laptop</option>
+              <option value="head/maze.png">Maze</option>
               <option value="head/nigiri.png">Nigiri</option>
               <option value="head/oyster.png">Oyster</option>
               <option value="head/pufferfish.png">Pufferfish</option>
+              <option value="head/pyramid.png">Pyramid</option>
               <option value="head/queencrown.png">Queencrown</option>
               <option value="head/road.png">Road</option>
               <option value="head/ruler-triangular.png">Ruler Triangular</option>
+              <option value="head/saturn.png">Saturn</option>
               <option value="head/skeleton-hat.png">Skeleton Hat</option>
               <option value="head/smile.png">Smile</option>
+              <option value="head/snowman.png">Snowman</option>
               <option value="head/star-sparkles.png">Star Sparkles</option>
+              <option value="head/thumbsup.png">Thumbs Up</option>
               <option value="head/trashcan.png">Trashcan</option>
+              <option value="head/undead.png">Undead</option>
+              <option value="head/watch.png">Watch</option>
               <option value="head/weed.png">Weed</option>
               <option value="head/wine-barrel.png">Wine Barrel</option>
-              <option value="head/.png"></option>
+              <option value="head/wizardhat.png">Wizard Hat</option>
             </select><hr>
           </div>
           <div class="dropdown">
             <label for="menu-accessory">Accessory:</label><br>
             <select id="menu-accessory">
+              <option value="accessory/.png"></option>
               <option value="accessory/hoodie-strings-uneven.png">Hoodie Strings Uneven</option>
               <option value="accessory/id.png">ID</option>
-              <option value="accessory/.png"></option>
             </select><hr>
           </div>
           <div class="dropdown">
             <label for="menu-body">Body:</label><br>
             <select id="menu-body">
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
+              <option value="body/.png"></option>
             </select><hr>
           </div>
           <div class="dropdown">
@@ -119,12 +130,14 @@
         </div>
     <div class="image-container">
       <img id="img-glasses" src="glasses/default.png" style="z-index: 5;">
-      <img id="img-head" src="head/boot.png" style="z-index: 4;">
+      <img id="img-head" src="head/beer.png" style="z-index: 4;">
       <img id="img-accessory" src="accessory/hoodie-strings-uneven.png" style="z-index: 3;">
       <img id="img-body" src="body.png" style="z-index: 2;">
       <img id="img-bg" src="bg/white.png" style="z-index: 1;">
     </div>
     </div>
+    <p>
+    <div style="text-align: center;"><a href="https://twitter.com/skipperlee_eth" target="_blank">Twitter</a></div>
     <script>
         const menu_glasses = document.getElementById('menu-glasses');
         const img_glasses = document.getElementById('img-glasses');
