@@ -5,10 +5,11 @@ an off-chain avatar artwork generator featuring Nouns traits <br>
 drawn in black-and-white, perfect if you want to fill in your own colours <br>
 [**TRY IT OUT HERE!**](https://skipperlee-eth.github.io/hd-bw/index.html) <br>
 ### current progress
+"+n" indicates custom traits
 - [x] barebones HTML/JS
-- [x] line art ( 5 for 23 glasses )
+- [x] line art ( 5 for 23+17 glasses )
 - [ ] line art ( 83 / 242 heads )
-- [ ] line art ( 16 / 140+3 accessories )
+- [ ] line art ( 28 / 140+3 accessories )
 - [x] line art ( 1 for 30 bodies )
 - [x] backgrounds ( black/grey/white )
 ## hd-c // HD Nouns Off-chain Generator in Colour (coming soon&#8482;)
