@@ -249,8 +249,7 @@
               <option value="bg/white.png">White</option>
             </select><hr>
           </div>
-          <div>* indicates<br>a custom trait<hr></div>
-          <div><input type="button" value="Download" id="download"></div>
+          <div>* indicates<br>a custom trait</div>
         </div>
     <div class="image-container">
       <img id="img-glasses" src="glasses/default.png" style="z-index: 5;">
@@ -259,7 +258,6 @@
       <img id="img-body" src="body.png" style="z-index: 2;">
       <img id="img-bg" src="bg/white.png" style="z-index: 1;">
     </div>
-    <div id="image-preview"></div>
     </div>
     <p>
     <div style="text-align: center;"><a href="https://twitter.com/skipperlee_eth" target="_blank">Twitter</a></div>
@@ -303,18 +301,6 @@
         // Update the image source
         img_bg.src = selectedOption;
         });
-
-        $("#download").on('click', function () {
-                html2canvas(document.getElementById("image-container")).then(function (canvas) {                   
-                   var anchorTag = document.createElement("a");
-                    document.body.appendChild(anchorTag);
-                    document.getElementById("image-preview").appendChild(canvas);
-                    anchorTag.download = "hd-nouns-bw.png";
-                    anchorTag.href = canvas.toDataURL();
-                    anchorTag.target = '_blank';
-                    anchorTag.click();
-                });
-          });
     </script>
   </body>
 </html>
