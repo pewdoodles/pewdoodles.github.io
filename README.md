@@ -8,7 +8,7 @@ drawn in black-and-white, perfect if you want to fill in your own colours <br>
 "+n" indicates custom traits
 - [x] barebones HTML/JS
 - [x] line art ( 5 for 23+17 glasses )
-- [ ] line art ( 97 / 242 heads )
+- [ ] line art ( 101 / 242 heads )
 - [ ] line art ( 110 / 140+6 accessories )
 - [x] line art ( 1 for 30 bodies )
 - [x] backgrounds ( black/grey/white )
